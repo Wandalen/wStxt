@@ -3,8 +3,8 @@ root:
   - stxt.out
 consistency:
   ../will.yml: &ref_0
-    hash: 76ee25b7cb3eff64f7e9812f29fa21e2
-    size: 6463
+    hash: ca9db3ae017d6229b3ee3eadf67e6f3d
+    size: 6991
 module:
   stxt.out:
     about:
@@ -365,6 +365,30 @@ module:
           content: proto
           export: 1
     step:
+      sources.join.full:
+        opts:
+          entryPath: proto/wtools/amid/l1/stxt/entry/Stxt.s
+          modulesList:
+            - wTools
+            - wBlueprint
+            - wCopyable
+            - wCloner
+            - wTraverser
+            - wStringer
+            - wLooker
+            - wEqualer
+            - wSelector
+            - wReplicator
+            - wPathTools
+            - wPathBasic
+            - wStringsExtra
+            - wArraySorted
+            - wArraySparse
+            - wProto
+          interpreter: browser
+          outPath: out/debug/Main.s
+        inherit:
+          - sources.join
       proto.export:
         opts:
           export: 'path::export'
@@ -716,6 +740,9 @@ module:
         inherit:
           - files.transpile
     build:
+      sources.join:
+        steps:
+          - sources.join.full
       proto.export:
         steps:
           - 'step::proto.export'
@@ -1060,6 +1087,30 @@ module:
         inherit:
           - predefined.*
     step:
+      sources.join.full:
+        opts:
+          entryPath: proto/wtools/amid/l1/stxt/entry/Stxt.s
+          modulesList:
+            - wTools
+            - wBlueprint
+            - wCopyable
+            - wCloner
+            - wTraverser
+            - wStringer
+            - wLooker
+            - wEqualer
+            - wSelector
+            - wReplicator
+            - wPathTools
+            - wPathBasic
+            - wStringsExtra
+            - wArraySorted
+            - wArraySparse
+            - wProto
+          interpreter: browser
+          outPath: out/debug/Main.s
+        inherit:
+          - sources.join
       proto.export:
         opts:
           export: 'path::export'
@@ -1411,6 +1462,9 @@ module:
         inherit:
           - files.transpile
     build:
+      sources.join:
+        steps:
+          - sources.join.full
       proto.export:
         steps:
           - 'step::proto.export'
@@ -1486,5 +1540,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: 76ee25b7cb3eff64f7e9812f29fa21e2
-        size: 6463
+        hash: ca9db3ae017d6229b3ee3eadf67e6f3d
+        size: 6991
