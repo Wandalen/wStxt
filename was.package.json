@@ -17,7 +17,7 @@
     "out",
     "proto/node_modules",
     "proto/node_modules/Tools",
-    "proto/node_modules/stxt"
+    "proto/node_modules/stxt",
     "proto/node_modules/wstxt"
   ],
   "scripts": {
@@ -36,7 +36,7 @@
     "wblueprint": ""
   },
   "devDependencies": {
-    "wTesting": "",
+    "wTesting": ""
   },
   "keywords": [
     "wTools",
