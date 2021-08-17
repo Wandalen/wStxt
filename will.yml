@@ -21,6 +21,11 @@ about:
     test: wtest .run proto/**
     docgen: wdocgen .build proto
 build:
+
+  sources.join:
+    steps:
+      - sources.join.full
+
   proto.export:
     criterion:
       content: proto
@@ -219,6 +224,30 @@ reflector:
       '**.test*': 1
       'path::proto': '{path::out.*=1}/Tests.test.s'
 step:
+
+  sources.join.full:
+    inherit : sources.join
+    entryPath : proto/wtools/amid/l1/stxt/entry/Stxt.s
+    modulesList :
+      - wTools
+      - wBlueprint
+      - wCopyable
+      - wCloner
+      - wTraverser
+      - wStringer
+      - wLooker
+      - wEqualer
+      - wSelector
+      - wReplicator
+      - wPathTools
+      - wPathBasic
+      - wStringsExtra
+      - wArraySorted
+      - wArraySparse
+      - wProto
+    interpreter : browser
+    outPath : out/debug/Main.s
+
   proto.export:
     inherit: module.export
     export: 'path::export'
