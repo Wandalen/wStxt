@@ -1,6 +1,6 @@
 {
   "name": "stxt",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "engine": "node >= 10.0.0",
   "description": "Parer of stxt format.",
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
@@ -13,12 +13,12 @@
   ],
   "main": "proto/node_modules/stxt",
   "files": [
-    "proto/wtools/abase/l3_proto",
-    "out",
+    "proto/wtools/amid/l1/stxt",
     "proto/node_modules",
     "proto/node_modules/Tools",
     "proto/node_modules/stxt",
-    "proto/node_modules/wstxt"
+    "proto/node_modules/wstxt",
+    "out"
   ],
   "scripts": {
     "test": "wtest .run 'proto/**' rapidity:-1",

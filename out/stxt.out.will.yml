@@ -3,8 +3,8 @@ root:
   - stxt.out
 consistency:
   ../will.yml: &ref_0
-    hash: ca9db3ae017d6229b3ee3eadf67e6f3d
-    size: 6991
+    hash: a318185bea10ce2202bb5919e3162b91
+    size: 6825
 module:
   stxt.out:
     about:
@@ -105,7 +105,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: ../proto/wtools/abase/l3_proto/Include.s
+        path: ../proto/wtools/amid/l1/stxt/entry/Stxt.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -115,13 +115,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/wtools/abase/l3_proto/Include.s'
+        path: '{path::out.*=1}/proto/wtools/amid/l1/stxt/entry/Stxt.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/wtools/abase/l3_proto/Include.s'
+        path: '{path::out.*=1}/proto/wtools/amid/l1/stxt/entry/Stxt.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -136,7 +136,7 @@ module:
         path: '{path::out.*=}/source/Index.s'
       npm.proto.entry:
         path:
-          - ../proto/wtools/abase/l3_proto/Include.s
+          - ../proto/wtools/amid/l1/stxt/entry/Stxt.s
           - ../proto/node_modules/stxt
       exported.dir.proto.export:
         criterion:
@@ -190,18 +190,6 @@ module:
         path: 'npm:///wblueprint'
         autoExporting: 0
         enabled: 0
-      Self:
-        path: 'hd://..'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
-      wequaler:
-        path: 'npm:///wequaler'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
       wTesting:
         path: 'npm:///wTesting'
         autoExporting: 0
@@ -921,7 +909,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: proto/wtools/abase/l3_proto/Include.s
+        path: proto/wtools/amid/l1/stxt/entry/Stxt.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -931,13 +919,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/wtools/abase/l3_proto/Include.s'
+        path: '{path::out.*=1}/proto/wtools/amid/l1/stxt/entry/Stxt.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/wtools/abase/l3_proto/Include.s'
+        path: '{path::out.*=1}/proto/wtools/amid/l1/stxt/entry/Stxt.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -952,7 +940,7 @@ module:
         path: '{path::out.*=}/source/Index.s'
       npm.proto.entry:
         path:
-          - proto/wtools/abase/l3_proto/Include.s
+          - proto/wtools/amid/l1/stxt/entry/Stxt.s
           - proto/node_modules/stxt
     submodule:
       wTools:
@@ -963,18 +951,6 @@ module:
         path: 'npm:///wblueprint'
         autoExporting: 0
         enabled: 0
-      Self:
-        path: 'hd://.'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
-      wequaler:
-        path: 'npm:///wequaler'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
       wTesting:
         path: 'npm:///wTesting'
         autoExporting: 0
@@ -1540,5 +1516,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: ca9db3ae017d6229b3ee3eadf67e6f3d
-        size: 6991
+        hash: a318185bea10ce2202bb5919e3162b91
+        size: 6825
