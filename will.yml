@@ -140,7 +140,7 @@ path:
       raw: compiled
       content: prime
   entry.proto.no.tests:
-    path: proto/wtools/abase/l3_proto/Include.s
+    path: proto/wtools/amid/l1/stxt/entry/Stxt.s
     criterion:
       tests: no.tests
   entry.proto.only.tests:
@@ -148,7 +148,7 @@ path:
     criterion:
       tests: only.tests
   entry.out.raw.debug:
-    path: '{path::out.*=1}/proto/wtools/abase/l3_proto/Include.s'
+    path: '{path::out.*=1}/proto/wtools/amid/l1/stxt/entry/Stxt.s'
     criterion:
       debug:
         - debug
@@ -164,7 +164,7 @@ path:
       raw: compiled
       content: prime
   npm.proto.entry:
-    - proto/wtools/abase/l3_proto/Include.s
+    - proto/wtools/amid/l1/stxt/entry/Stxt.s
     - proto/node_modules/stxt
 reflector:
   reflect.proto:
@@ -325,16 +325,6 @@ submodule:
   wblueprint:
     path: 'npm:///wblueprint'
     enabled: 0
-  Self:
-    path: 'hd://.'
-    enabled: 0
-    criterion:
-      development: 1
-  wequaler:
-    path: 'npm:///wequaler'
-    enabled: 0
-    criterion:
-      development: 1
   wTesting:
     path: 'npm:///wTesting'
     enabled: 0
