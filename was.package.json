@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "wTools": "",
+    "wCopyable": "",
     "wblueprint": ""
   },
   "devDependencies": {

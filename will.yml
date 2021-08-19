@@ -322,6 +322,9 @@ submodule:
   wTools:
     path: 'npm:///wTools'
     enabled: 0
+  wCopyable:
+    path: 'npm:///wCopyable'
+    enabled: 0
   wblueprint:
     path: 'npm:///wblueprint'
     enabled: 0
