@@ -25,6 +25,9 @@ build:
   sources.join:
     steps:
       - sources.join.full
+  sources.join.ext:
+    steps:
+      - sources.join.ext.deps
 
   proto.export:
     criterion:
@@ -246,7 +249,51 @@ step:
       - wArraySparse
       - wProto
     interpreter : browser
-    outPath : out/debug/Main.s
+    outPath : out/stxt.browser.debug/Main.js
+
+  sources.join.ext.deps:
+    inherit : sources.join
+    entryPath : proto/wtools/amid/l1/stxt/entry/Stxt.s
+    modulesList :
+      - wTools
+      - wBlueprint
+      - wCopyable
+      - wCloner
+      - wTraverser
+      - wStringer
+      - wLooker
+      - wEqualer
+      - wSelector
+      - wReplicator
+      - wPathTools
+      - wPathBasic
+      - wStringsExtra
+      - wArraySorted
+      - wArraySparse
+      - wProto
+      - wDomBasic
+      - wTemplateTreeEnvironment
+      - wTemplateTreeResolver
+      - wResolver
+      - wConsequence
+      - wProcedure
+      - wInstancing
+      - wEventHandler
+      - wFilesBasic
+      - wUriBasic
+      - wWebUriBasic
+      - wRegexpObject
+      - wFieldsStack
+      - wVerbal
+      - wProcess
+      - wGdf
+      - wFilesHttp
+      - wIntrospectorBasic
+      - wLogger
+      - wColor256
+      - wColor
+    interpreter : browser
+    outPath : out/stxt.browser.debug/Main.ext.deps.js
 
   proto.export:
     inherit: module.export

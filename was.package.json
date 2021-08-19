@@ -37,7 +37,14 @@
     "wblueprint": ""
   },
   "devDependencies": {
-    "wTesting": ""
+    "wTesting": "",
+    "wtemplatetreeenvironment": "",
+    "wConsequence": "",
+    "wEventHandler": "",
+    "wProto": "",
+    "wcloner": "",
+    "wdombasic": "",
+    "winstancing": ""
   },
   "keywords": [
     "wTools",
