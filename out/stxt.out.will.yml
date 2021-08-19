@@ -3,8 +3,8 @@ root:
   - stxt.out
 consistency:
   ../will.yml: &ref_0
-    hash: a318185bea10ce2202bb5919e3162b91
-    size: 6825
+    hash: cdf370696e71279859c1e7c9ac1a27f2
+    size: 7871
 module:
   stxt.out:
     about:
@@ -184,6 +184,10 @@ module:
     submodule:
       wTools:
         path: 'npm:///wTools'
+        autoExporting: 0
+        enabled: 0
+      wCopyable:
+        path: 'npm:///wCopyable'
         autoExporting: 0
         enabled: 0
       wblueprint:
@@ -374,7 +378,52 @@ module:
             - wArraySparse
             - wProto
           interpreter: browser
-          outPath: out/debug/Main.s
+          outPath: out/stxt.browser.debug/Main.js
+        inherit:
+          - sources.join
+      sources.join.ext.deps:
+        opts:
+          entryPath: proto/wtools/amid/l1/stxt/entry/Stxt.s
+          modulesList:
+            - wTools
+            - wBlueprint
+            - wCopyable
+            - wCloner
+            - wTraverser
+            - wStringer
+            - wLooker
+            - wEqualer
+            - wSelector
+            - wReplicator
+            - wPathTools
+            - wPathBasic
+            - wStringsExtra
+            - wArraySorted
+            - wArraySparse
+            - wProto
+            - wDomBasic
+            - wTemplateTreeEnvironment
+            - wTemplateTreeResolver
+            - wResolver
+            - wConsequence
+            - wProcedure
+            - wInstancing
+            - wEventHandler
+            - wFilesBasic
+            - wUriBasic
+            - wWebUriBasic
+            - wRegexpObject
+            - wFieldsStack
+            - wVerbal
+            - wProcess
+            - wGdf
+            - wFilesHttp
+            - wIntrospectorBasic
+            - wLogger
+            - wColor256
+            - wColor
+          interpreter: browser
+          outPath: out/stxt.browser.debug/Main.js
         inherit:
           - sources.join
       proto.export:
@@ -731,6 +780,9 @@ module:
       sources.join:
         steps:
           - sources.join.full
+      sources.join.ext:
+        steps:
+          - sources.join.ext.deps
       proto.export:
         steps:
           - 'step::proto.export'
@@ -947,6 +999,10 @@ module:
         path: 'npm:///wTools'
         autoExporting: 0
         enabled: 0
+      wCopyable:
+        path: 'npm:///wCopyable'
+        autoExporting: 0
+        enabled: 0
       wblueprint:
         path: 'npm:///wblueprint'
         autoExporting: 0
@@ -1084,7 +1140,52 @@ module:
             - wArraySparse
             - wProto
           interpreter: browser
-          outPath: out/debug/Main.s
+          outPath: out/stxt.browser.debug/Main.js
+        inherit:
+          - sources.join
+      sources.join.ext.deps:
+        opts:
+          entryPath: proto/wtools/amid/l1/stxt/entry/Stxt.s
+          modulesList:
+            - wTools
+            - wBlueprint
+            - wCopyable
+            - wCloner
+            - wTraverser
+            - wStringer
+            - wLooker
+            - wEqualer
+            - wSelector
+            - wReplicator
+            - wPathTools
+            - wPathBasic
+            - wStringsExtra
+            - wArraySorted
+            - wArraySparse
+            - wProto
+            - wDomBasic
+            - wTemplateTreeEnvironment
+            - wTemplateTreeResolver
+            - wResolver
+            - wConsequence
+            - wProcedure
+            - wInstancing
+            - wEventHandler
+            - wFilesBasic
+            - wUriBasic
+            - wWebUriBasic
+            - wRegexpObject
+            - wFieldsStack
+            - wVerbal
+            - wProcess
+            - wGdf
+            - wFilesHttp
+            - wIntrospectorBasic
+            - wLogger
+            - wColor256
+            - wColor
+          interpreter: browser
+          outPath: out/stxt.browser.debug/Main.js
         inherit:
           - sources.join
       proto.export:
@@ -1441,6 +1542,9 @@ module:
       sources.join:
         steps:
           - sources.join.full
+      sources.join.ext:
+        steps:
+          - sources.join.ext.deps
       proto.export:
         steps:
           - 'step::proto.export'
@@ -1516,5 +1620,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: a318185bea10ce2202bb5919e3162b91
-        size: 6825
+        hash: cdf370696e71279859c1e7c9ac1a27f2
+        size: 7871

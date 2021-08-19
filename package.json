@@ -1,6 +1,6 @@
 {
   "name": "stxt",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "engine": "node >= 10.0.0",
   "description": "Parer of stxt format.",
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
@@ -33,10 +33,18 @@
   },
   "dependencies": {
     "wTools": "delta",
+    "wCopyable": "delta",
     "wblueprint": "delta"
   },
   "devDependencies": {
-    "wTesting": "delta"
+    "wTesting": "delta",
+    "wtemplatetreeenvironment": "delta",
+    "wProto": "delta",
+    "winstancing": "delta",
+    "wEventHandler": "delta",
+    "wdombasic": "delta",
+    "wConsequence": "delta",
+    "wcloner": "delta"
   },
   "keywords": [
     "wTools",

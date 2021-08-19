@@ -1,6 +1,6 @@
 {
   "name": "stxt",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "engine": "node >= 10.0.0",
   "description": "Parer of stxt format.",
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
@@ -39,12 +39,12 @@
   "devDependencies": {
     "wTesting": "",
     "wtemplatetreeenvironment": "",
-    "wConsequence": "",
-    "wEventHandler": "",
     "wProto": "",
-    "wcloner": "",
+    "winstancing": "",
+    "wEventHandler": "",
     "wdombasic": "",
-    "winstancing": ""
+    "wConsequence": "",
+    "wcloner": ""
   },
   "keywords": [
     "wTools",
