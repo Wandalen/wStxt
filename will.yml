@@ -293,7 +293,7 @@ step:
       - wColor256
       - wColor
     interpreter : browser
-    outPath : out/stxt.browser.debug/Main.ext.deps.js
+    outPath : out/stxt.browser.debug/Main.js
 
   proto.export:
     inherit: module.export
