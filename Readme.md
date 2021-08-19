@@ -5,8 +5,8 @@ Parer of stxt format.
 ### Try out from the repository
 
 ```
-git clone https://github.com/Wandalen/wProto
-cd wProto
+git clone https://github.com/Wandalen/wStxt
+cd wStxt
 will .npm.install
 node sample/trivial/Sample.s
 ```
@@ -16,7 +16,7 @@ Make sure you have utility `willbe` installed. To install willbe: `npm i -g will
 ### To add to your project
 
 ```
-npm add 'wProto@stable'
+npm add 'wStxt@stable'
 ```
 
 `Willbe` is not required to use the module in your project as submodule.
