@@ -3,8 +3,8 @@ root:
   - stxt.out
 consistency:
   ../will.yml: &ref_0
-    hash: cdf370696e71279859c1e7c9ac1a27f2
-    size: 7871
+    hash: 2654a5a31fa150ecdca9dab5ae583790
+    size: 7708
 module:
   stxt.out:
     about:
@@ -450,9 +450,6 @@ module:
           content: npm
         inherit:
           - module.export
-      npm.publish:
-        opts:
-          shell: npm publish
       npm.generate.debug.raw:
         opts:
           entryPath: 'path::entry.out.*=1'
@@ -794,12 +791,6 @@ module:
           - 'step::doc.export'
         criterion:
           content: doc
-          export: 1
-      npm.export:
-        steps:
-          - 'step::npm.publish'
-        criterion:
-          content: npm
           export: 1
       export:
         steps:
@@ -1212,9 +1203,6 @@ module:
           content: npm
         inherit:
           - module.export
-      npm.publish:
-        opts:
-          shell: npm publish
       npm.generate.debug.raw:
         opts:
           entryPath: 'path::entry.out.*=1'
@@ -1557,12 +1545,6 @@ module:
         criterion:
           content: doc
           export: 1
-      npm.export:
-        steps:
-          - 'step::npm.publish'
-        criterion:
-          content: npm
-          export: 1
       export:
         steps:
           - 'build::proto.export'
@@ -1620,5 +1602,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: cdf370696e71279859c1e7c9ac1a27f2
-        size: 7871
+        hash: 2654a5a31fa150ecdca9dab5ae583790
+        size: 7708
