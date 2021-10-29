@@ -1,7 +1,6 @@
 about:
   name: stxt
-  description: >-
-    Parer of stxt format.
+  description: Parer of stxt format.
   version: 0.4.169
   enabled: 1
   license: MIT
@@ -21,14 +20,12 @@ about:
     test: wtest .run proto/**
     docgen: wdocgen .build proto
 build:
-
   sources.join:
     steps:
       - sources.join.full
   sources.join.ext:
     steps:
       - sources.join.ext.deps
-
   proto.export:
     criterion:
       content: proto
@@ -41,12 +38,6 @@ build:
       export: 1
     steps:
       - 'step::doc.export'
-  npm.export:
-    criterion:
-      content: npm
-      export: 1
-    steps:
-      - 'step::npm.publish'
   export:
     criterion:
       default: 1
@@ -227,11 +218,10 @@ reflector:
       '**.test*': 1
       'path::proto': '{path::out.*=1}/Tests.test.s'
 step:
-
   sources.join.full:
-    inherit : sources.join
-    entryPath : proto/wtools/amid/l1/stxt/entry/Stxt.s
-    modulesList :
+    inherit: sources.join
+    entryPath: proto/wtools/amid/l1/stxt/entry/Stxt.s
+    modulesList:
       - wTools
       - wBlueprint
       - wCopyable
@@ -248,13 +238,12 @@ step:
       - wArraySorted
       - wArraySparse
       - wProto
-    interpreter : browser
-    outPath : out/stxt.browser.debug/Main.js
-
+    interpreter: browser
+    outPath: out/stxt.browser.debug/Main.js
   sources.join.ext.deps:
-    inherit : sources.join
-    entryPath : proto/wtools/amid/l1/stxt/entry/Stxt.s
-    modulesList :
+    inherit: sources.join
+    entryPath: proto/wtools/amid/l1/stxt/entry/Stxt.s
+    modulesList:
       - wTools
       - wBlueprint
       - wCopyable
@@ -292,9 +281,8 @@ step:
       - wLogger
       - wColor256
       - wColor
-    interpreter : browser
-    outPath : out/stxt.browser.debug/Main.js
-
+    interpreter: browser
+    outPath: out/stxt.browser.debug/Main.js
   proto.export:
     inherit: module.export
     export: 'path::export'
@@ -313,8 +301,6 @@ step:
     tar: 0
     criterion:
       content: npm
-  npm.publish:
-    shell: npm publish
   npm.generate:
     inherit: npm.generate
     entryPath: 'path::entry.out.*=1'
