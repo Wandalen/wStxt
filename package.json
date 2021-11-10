@@ -1,6 +1,6 @@
 {
   "name": "stxt",
-  "version": "0.3.15",
+  "version": "0.3.16",
   "engine": "node >= 10.0.0",
   "description": "Parer of stxt format.",
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
@@ -32,19 +32,19 @@
     "url": "https://github.com/Wandalen/wStxt/issues"
   },
   "dependencies": {
-    "wTools": "latest",
-    "wCopyable": "latest",
-    "wblueprint": "latest"
+    "wTools": "alpha",
+    "wCopyable": "alpha",
+    "wblueprint": "alpha"
   },
   "devDependencies": {
-    "wTesting": "latest",
-    "wtemplatetreeenvironment": "latest",
-    "wProto": "latest",
-    "winstancing": "latest",
-    "wEventHandler": "latest",
-    "wdombasic": "latest",
-    "wConsequence": "latest",
-    "wcloner": "latest"
+    "wTesting": "alpha",
+    "wtemplatetreeenvironment": "alpha",
+    "wProto": "alpha",
+    "winstancing": "alpha",
+    "wEventHandler": "alpha",
+    "wdombasic": "alpha",
+    "wConsequence": "alpha",
+    "wcloner": "alpha"
   },
   "keywords": [
     "wTools",
