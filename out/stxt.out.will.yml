@@ -3,8 +3,8 @@ root:
   - stxt.out
 consistency:
   ../will.yml: &ref_0
-    hash: 2654a5a31fa150ecdca9dab5ae583790
-    size: 7708
+    hash: 4ad0e1126e0e9ad5ebbc53a65e7d1b5b
+    size: 7716
 module:
   stxt.out:
     about:
@@ -1602,5 +1602,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: 2654a5a31fa150ecdca9dab5ae583790
-        size: 7708
+        hash: 4ad0e1126e0e9ad5ebbc53a65e7d1b5b
+        size: 7716
